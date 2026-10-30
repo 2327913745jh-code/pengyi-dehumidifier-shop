@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="朋意除湿袋实训网店商品页，支持多规格选择、模拟下单、订单归档与成交材料导出。"><meta name="theme-color" content="#173b35">
+  <title>朋意除湿袋｜干爽看得见</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="training-ribbon"><span>课程实训演示</span><b>非真实销售与支付</b><button id="shareBtn" type="button">分享页面</button></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="朋意首页"><span class="brand-mark">朋</span><span><b>朋意家居</b><small>PENGYI HOME</small></span></a>
+    <nav aria-label="主导航"><a href="#benefits">产品亮点</a><a href="#scenes">适用场景</a><a href="#details">规格详情</a><a href="#usage">使用方法</a><a href="#faq">购买答疑</a></nav>
+    <div class="header-actions"><button class="ghost" type="button" data-open-archive>订单档案</button><button class="cart-button" type="button" data-open-cart>购物车 <span id="cartCount">0</span></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="hero-kicker"><span>衣柜日常防潮方案</span><i></i><span>悬挂即用</span></div>
+        <h1>潮气收进袋里<br><span>干爽留在衣柜</span></h1>
+        <p class="lead">可视集水设计，免插电、不占层板。适合衣柜、鞋柜、储物间等易潮小空间。</p>
+        <div class="chips"><span><i>✓</i>可视集水</span><span><i>✓</i>免插电</span><span><i>✓</i>悬挂省空间</span></div>
+        <div class="hero-purchase"><div class="price"><small>实训演示价</small><strong id="heroPrice">¥19.90</strong><del id="heroCompare">¥29.90</del></div><button class="primary" type="button" data-scroll-sku>选择规格</button><button class="text-button" type="button" data-open-order>直接模拟下单 →</button></div>
+        <p class="micro">演示包邮 · 模拟7天无理由 · 所有参数均可按真实产品资料替换</p>
+      </div>
+      <div class="hero-visual reveal" aria-label="朋意除湿袋产品示意图">
+        <div class="soft-orbit orbit-one"></div><div class="soft-orbit orbit-two"></div><div class="humidity humidity-a"><b>78%</b><small>潮湿环境示意</small></div><div class="humidity humidity-b"><b>55%</b><small>干爽状态示意</small></div><div class="hanger"></div>
+        <div class="product-bag"><div class="bag-shine"></div><div class="bag-top"><b>朋意</b><span>衣柜除湿袋</span><small>DEHUMIDIFIER BAG</small><em>500g</em></div><div class="wave"></div><div class="water"><i></i><em>吸湿集水区</em><small>状态清晰可见</small></div></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip reveal" aria-label="商品特点">
+      <div><span class="trust-icon">03</span><p><b>三档组合</b><small>适配不同收纳空间</small></p></div><div><span class="trust-icon">◉</span><p><b>透明集水</b><small>吸湿状态随时可见</small></p></div><div><span class="trust-icon">⌁</span><p><b>便捷悬挂</b><small>拆开外袋即可使用</small></p></div><div><span class="trust-icon">◇</span><p><b>独立密封</b><small>使用前保持完整包装</small></p></div>
+    </section>
+
+    <section id="benefits" class="section benefits">
+      <div class="section-heading reveal"><p class="eyebrow">WHY PENGYI</p><h2>小空间防潮<br>不必大动干戈</h2><p>把复杂的除湿操作，化成拆袋、悬挂、观察三个轻松动作。</p></div>
+      <div class="feature-grid">
+        <article class="reveal"><span class="feature-no">01</span><div class="icon droplet"></div><h3>集水过程看得见</h3><p>透明下袋呈现集水变化，方便判断使用状态与更换时机。</p><span class="feature-tag">直观</span></article>
+        <article class="reveal"><span class="feature-no">02</span><div class="icon hook"></div><h3>挂起来更省空间</h3><p>适合衣柜横杆、储物架等位置，不挤占宝贵的层板面积。</p><span class="feature-tag">省空间</span></article>
+        <article class="reveal"><span class="feature-no">03</span><div class="icon bolt">×</div><h3>无需电源</h3><p>无需插座和复杂设置，适合封闭或不方便通电的小空间。</p><span class="feature-tag">轻操作</span></article>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="demo-copy reveal"><p class="eyebrow">INTERACTIVE DEMO</p><h2>拖动看看<br>吸湿状态如何变化</h2><p>下方是页面交互示意，不代表固定吸湿速度或实际效果。真实使用情况受湿度、温度、通风和空间大小影响。</p><label for="progressRange">模拟吸湿进度 <output id="progressValue">42%</output></label><input id="progressRange" type="range" min="0" max="100" value="42"></div>
+      <div class="demo-visual reveal"><div class="demo-bag"><div class="demo-label"><b>朋意</b><span>集水状态演示</span></div><div class="demo-water" id="demoWater"><div class="bubbles"></div></div><span class="level-label" id="levelLabel">开始集水</span></div><div class="demo-scale"><span>未使用</span><span>使用中</span><span>建议观察</span></div></div>
+    </section>
+
+    <section id="scenes" class="scene-section">
+      <div class="scene-copy reveal"><p class="eyebrow">ONE BAG ONE SPACE</p><h2>潮气容易停留的地方<br>都值得多一份干爽</h2><p>建议根据空间大小、通风和湿度情况灵活增加数量。</p><a href="#sku">查看组合建议 →</a></div>
+      <div class="scene-cards"><div class="scene wardrobe reveal"><span>衣柜</span><small>减少闷潮感</small><b>建议 1–2袋</b></div><div class="scene shoes reveal"><span>鞋柜</span><small>改善潮湿环境</small><b>建议 1袋</b></div><div class="scene storage reveal"><span>储物间</span><small>辅助日常防潮</small><b>按空间增加</b></div></div>
+    </section>
+
+    <section id="sku" class="section sku-section">
+      <div class="section-heading reveal"><p class="eyebrow">CHOOSE YOUR SET</p><h2>按空间选择组合</h2><p>规格、原价与优惠均为课程实训演示数据。</p></div>
+      <div class="sku-grid" id="skuGrid">
+        <button class="sku-card selected reveal" type="button" data-sku="3" data-price="19.90" data-compare="29.90"><span class="sku-badge">入门组合</span><b>3袋装</b><small>卧室衣柜 + 鞋柜</small><strong>¥19.90</strong><del>¥29.90</del><em>约 ¥6.63/袋</em></button>
+        <button class="sku-card reveal" type="button" data-sku="6" data-price="35.90" data-compare="59.80"><span class="sku-badge hot">推荐</span><b>6袋装</b><small>两组衣柜 + 多处收纳</small><strong>¥35.90</strong><del>¥59.80</del><em>约 ¥5.98/袋</em></button>
+        <button class="sku-card reveal" type="button" data-sku="9" data-price="49.90" data-compare="89.70"><span class="sku-badge">全屋组合</span><b>9袋装</b><small>多房间集中配置</small><strong>¥49.90</strong><del>¥89.70</del><em>约 ¥5.54/袋</em></button>
+      </div>
+      <div class="sku-action reveal"><div><span>已选择</span><b id="selectedSkuLabel">500g × 3袋装</b></div><div class="qty-picker"><button type="button" data-sku-minus aria-label="减少数量">−</button><output id="skuQty">1</output><button type="button" data-sku-plus aria-label="增加数量">＋</button></div><button class="primary" type="button" id="addCartBtn">加入购物车 · <span id="addCartPrice">¥19.90</span></button><button class="secondary" type="button" data-open-order>立即模拟下单</button></div>
+    </section>
+
+    <section id="details" class="section details">
+      <div class="section-heading left reveal"><p class="eyebrow">PRODUCT DETAILS</p><h2>买前看清楚<br>使用更安心</h2></div>
+      <div class="detail-layout"><div class="detail-panel reveal"><dl><div><dt>商品名称</dt><dd>朋意衣柜除湿袋</dd></div><div><dt>演示单袋规格</dt><dd>500g</dd></div><div><dt>可选组合</dt><dd>3袋 / 6袋 / 9袋</dd></div><div><dt>适用场景</dt><dd>衣柜、鞋柜、储物间等</dd></div><div><dt>使用方式</dt><dd>拆开外包装后垂直悬挂</dd></div><div><dt>保存方式</dt><dd>未使用前密封，置于阴凉干燥处</dd></div><div><dt>页面性质</dt><dd>课程实训模拟，不构成真实销售</dd></div></dl></div><div class="notice-panel reveal"><span class="notice-mark">!</span><h3>使用提示</h3><ul><li>请勿撕开或刺破内袋。</li><li>置于儿童与宠物不易触及处。</li><li>避免与衣物紧贴，保持自然垂直。</li><li>包装破损或内容物泄漏时停止使用。</li></ul><p>成分、净含量、执行标准及处置方式，应以正式包装与检验资料为准。</p></div></div>
+    </section>
+
+    <section id="usage" class="section usage"><div class="section-heading reveal"><p class="eyebrow">THREE EASY STEPS</p><h2>拆开 挂好 等待集水</h2></div><ol class="steps"><li class="reveal"><b>1</b><div class="step-visual tear"></div><div><h3>撕开外包装</h3><p>沿封口打开，仅取出完整内袋。</p></div></li><li class="reveal"><b>2</b><div class="step-visual hang"></div><div><h3>垂直悬挂</h3><p>选择稳固横杆，保持集水区朝下。</p></div></li><li class="reveal"><b>3</b><div class="step-visual watch"></div><div><h3>观察与更换</h3><p>定期查看集水情况，按包装说明处理。</p></div></li></ol></section>
+
+    <section id="faq" class="section faq"><div class="section-heading left reveal"><p class="eyebrow">FAQ</p><h2>购买前常见问题</h2></div><details open class="reveal"><summary>一袋可以用多久？<span>＋</span></summary><p>使用时间受环境湿度、温度、通风和空间大小影响，不能用固定天数概括。请以实际集水状态与正式包装说明为准。</p></details><details class="reveal"><summary>衣柜、鞋柜应该放几袋？<span>＋</span></summary><p>普通小空间可先放1袋，较大衣柜或潮湿环境可按实际情况增加。本页面的数量建议仅用于课程演示。</p></details><details class="reveal"><summary>可以放在卧室里吗？<span>＋</span></summary><p>本品定位为衣柜、鞋柜等小空间辅助防潮用品。应保持包装完整，并放在儿童与宠物不易触及的位置。</p></details><details class="reveal"><summary>页面上的价格和规格是真实的吗？<span>＋</span></summary><p>不是。价格、规格、运费和售后均为课程实训演示参数，正式经营前需依据真实成本、资质与平台规则确认。</p></details></section>
+
+    <section class="final-cta reveal"><div><p class="eyebrow">TRAINING CHECKOUT</p><h2>从选品到成交<br>完整演示一遍</h2><p>生成订单编号、成交金额、时间与可打印确认单，并自动保存到本地订单档案。</p></div><div><button class="primary light" type="button" data-open-order>开始模拟下单</button><button class="text-button light-text" type="button" data-open-archive>查看订单档案 →</button></div></section>
+  </main>
+
+  <footer><div class="footer-brand"><div class="brand"><span class="brand-mark">朋</span><span><b>朋意家居</b><small>PENGYI HOME</small></span></div><p>让收纳空间多一份清爽，也让实训成果更完整。</p></div><div class="footer-links"><b>页面导航</b><a href="#benefits">产品亮点</a><a href="#sku">规格选择</a><a href="#usage">使用方法</a><a href="#faq">常见问题</a></div><div class="footer-note"><b>实训声明</b><p>所有商品信息、价格与订单均为模拟数据，不发生真实付款与发货。</p></div><p class="copyright">© 2026 朋意除湿袋实训项目组</p></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">YOUR CART</p><h2>模拟购物车</h2></div><button class="close" type="button" data-close-cart aria-label="关闭">×</button></div><div id="cartItems" class="cart-items"></div><div class="empty-cart" id="emptyCart"><span>◇</span><b>购物车还是空的</b><p>选择一个适合的组合加入购物车吧</p><button class="secondary" type="button" data-close-cart data-scroll-sku>去选规格</button></div><div class="cart-footer" id="cartFooter"><div><span>模拟合计</span><strong id="cartTotal">¥0.00</strong></div><button class="primary" type="button" data-cart-checkout>去模拟结算</button></div></aside><div class="drawer-mask" id="drawerMask"></div>
+
+  <dialog id="orderDialog"><form id="orderForm"><button class="close" type="button" data-close-order aria-label="关闭">×</button><p class="eyebrow">TRAINING ORDER</p><h2>确认模拟订单</h2><div class="order-product"><div class="mini-bag">朋意</div><div><b id="orderSkuName">朋意衣柜除湿袋</b><span id="orderSkuMeta">500g × 3袋装</span></div><strong id="orderLinePrice">¥19.90</strong></div><label>模拟收货人<input name="name" required maxlength="10" placeholder="如：实训学员" autocomplete="off"></label><label>模拟手机号<input name="phone" required inputmode="numeric" pattern="1\d{10}" placeholder="仅用于格式演示" autocomplete="off"></label><label>模拟收货地址<textarea name="address" required maxlength="80" placeholder="请勿填写真实敏感信息"></textarea></label><div class="quantity"><span>购买数量</span><div><button type="button" data-order-minus>−</button><output id="orderQty">1</output><button type="button" data-order-plus>＋</button></div></div><div class="total"><span>合计（演示包邮）</span><strong id="orderTotal">¥19.90</strong></div><label class="consent"><input type="checkbox" required> 我知道这是实训模拟，不会发生真实付款或发货</label><button class="primary submit" type="submit">提交模拟订单</button></form></dialog>
+  <dialog id="receiptDialog"><article class="receipt" id="receipt"><button class="close no-print" type="button" data-close-receipt aria-label="关闭">×</button><div class="receipt-head"><span class="success">✓</span><div><p class="eyebrow">SIMULATED SUCCESS</p><h2>订单成交确认单</h2></div></div><p class="stamp">实训模拟凭证 · 非真实交易</p><dl id="receiptData"></dl><div class="receipt-total"><span>模拟实付</span><strong id="receiptTotal"></strong></div><div class="receipt-actions no-print"><button class="secondary" type="button" data-print>打印或保存PDF</button><button class="primary" type="button" data-new>再建一单</button></div></article></dialog>
+  <dialog id="archiveDialog" class="wide-dialog"><article class="archive"><button class="close" type="button" data-close-archive aria-label="关闭">×</button><div class="archive-head"><div><p class="eyebrow">ORDER MATERIALS</p><h2>模拟订单档案</h2><p>订单仅保存在当前浏览器，可搜索、查看和导出CSV。</p></div><div class="archive-tools"><input id="orderSearch" type="search" placeholder="搜索订单号或收货人"><button class="secondary" id="exportCsv" type="button">导出CSV</button></div></div><div class="archive-stats"><div><span>累计订单</span><b id="statOrders">0</b></div><div><span>模拟成交额</span><b id="statRevenue">¥0.00</b></div><div><span>最近成交</span><b id="statLatest">暂无</b></div></div><div class="archive-table-wrap"><table><thead><tr><th>订单编号</th><th>规格</th><th>数量</th><th>金额</th><th>收货人</th><th>时间</th><th>操作</th></tr></thead><tbody id="archiveRows"></tbody></table><div class="archive-empty" id="archiveEmpty">还没有模拟订单，完成一次下单后会自动出现在这里。</div></div></article></dialog>
+
+  <div class="mobile-buy"><div><small>已选 <span id="mobileSku">3袋装</span></small><b id="mobilePrice">¥19.90</b></div><button type="button" data-open-cart>购物车 <span id="mobileCartCount">0</span></button><button class="primary" type="button" data-open-order>立即下单</button></div><div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body></html>
